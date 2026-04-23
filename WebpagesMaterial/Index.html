@@ -72,6 +72,25 @@
     align-items: center;
     min-height: 80vh; /* pushes it toward center vertically */
         }
+        .video-wrapper {
+        position: relative;
+        width: 90%;           /* bigger width */
+        max-width: 900px;     /* controls max size */
+        margin: 40px auto;    /* THIS centers it */
+        padding-bottom: 56.25%; /* 16:9 ratio */
+        height: 0;
+        }
+        #home {
+        text-align: center;
+        padding-top: 100px;
+        }   
+        .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
 
         </style>
     </head>
