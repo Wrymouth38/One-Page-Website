@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basic HTML</title>
+        <meta charset="utf-8">
+        <title>Warhammer 40k fun club</title>
+        <style>
+
+    body {
+    margin: 0; /* removes default spacing */
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url('./images/MAINHOMEPAGE.png'); /* your image path */
+    background-size: cover;       /* makes it fill the whole screen */
+    background-position: center;  /* keeps it centered */
+    background-repeat: no-repeat; /* no tiling */
+    background-attachment: fixed; /* optional: creates a cool parallax effect */
+    position: relative;
+    z-index: 0;
+        }
+
+        .nav a {
+    text-decoration: none; /* removes underline */
+    color: white;          /* or any color you want */
+    font-size: 20px;       /* makes it bigger */
+    font-weight: bold;
+        }
+        
+        .nav a:hover {
+    color: gold; /* Warhammer vibe 👀 */
+        }
+
+        body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.2); /* dark overlay */
+    z-index: -1;
+        }
+
+    .gallery-img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        }
+
+        /* Grid part of the gallery */
+
+        .gallery-grid {
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        /*Nav element*/
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            list-style: none;
+            padding: 20px 0;
+        }
+
+        .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* pushes it toward center vertically */
+        }
+
+        </style>
+    </head>
+    <body>
+        <!--NAV-->
+        <div>
+            <div>
+                <ul class="nav">
+                    <a href="#home" id="link"><li>HOME</li></a>
+                    <a href="#gallery" id="link"><li>GALLERY</li></a>
+                    <a href="#contact" id="link"><li>RESERVATIONS</li></a>
+                </ul>
+            </div>
+        </div>
+        <!--END NAV-->
+
+        <!--HOME-->
+        <div id="home">
+            <div>
+                <div>
+                    <span>Warhammer 40K</span>
+                </div>
+            </div>
+        </div>
+        <!--END HOME-->
+
+        <!--GALLERY-->
+        <section>
+            <div id="gallery">
+                <h1>Gallery</h1>
+                <div class="gallery-grid">
+
+                    <!--PHOTO-CONTAINER 1-->
+                    <div>
+                        <div>
+                            <a href="./images/thumb/thumb_1.jpg" target="_blank">
+                            <img class="gallery-img" src="./images/thumb/thumb_1.jpg" alt="Image of Adeptus Custodes">
+                            </a>
+                            <div>
+                                <h3><em>Click to Enlarge</em></h3>
+                                <p>Adeptus Custodes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END PHOTO-CONTAINER 1-->
+
+                    <!--PHOTO-CONTAINER 2-->
+                    <div>
+                        <div>
+                            <a href="./images/thumb/thumb_2.jpg" target="_blank">
+                            <img class="gallery-img" src="./images/thumb/thumb_2.jpg" alt="Image of Astra Militarum Imperial Guard">
+                            </a>
+                            <div>
+                                <h3><em>Click to Enlarge</em></h3>
+                                <p>Militarum Imperial Guard</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END PHOTO-CONTAINER 2-->
+
+                    <!--PHOTO-CONTAINER 3-->
+                    <div>
+                        <div>
+                            <a href="./images/thumb/thumb_3.jpg" target="_blank">
+                            <img class="gallery-img" src="./images/thumb/thumb_3.jpg" alt="Image of Chaos Space Marines">
+                            </a>
+                            <div>
+                                <h3><em>Click to Enlarge</em></h3>
+                                <p>Chaos Space Marines</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END PHOTO-CONTAINER 3-->
+
+                    <!--PHOTO-CONTAINER 4-->
+                    <div>
+                        <div>
+                            <a href="./images/thumb/thumb_4.jpg" target="_blank">
+                            <img class="gallery-img" src="./images/thumb/thumb_4.jpg" alt="Image of Necrons">
+                            </a>
+                            <div>
+                                <h3><em>Click to Enlarge</em></h3>
+                                <p>Necrons</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END PHOTO-CONTAINER 4-->
+
+                    <!--PHOTO-CONTAINER 5-->
+                    <div>
+                        <div>
+                            <a href="./images/thumb/thumb_5.jpg" target="_blank">
+                            <img class="gallery-img" src="./images/thumb/thumb_5.jpg" alt="Image of Drukhari (Dark Eldar)">
+                            </a>
+                            <div>
+                                <h3><em>Click to Enlarge</em></h3>
+                                <p>Drukhari Dark Eldar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END PHOTO-CONTAINER 5-->
+
+                    <!--PHOTO-CONTAINER 6-->
+                    <div>
+                        <div>
+                            <a href="./images/thumb/thumb_6.jpg" target="_blank">
+                            <img class="gallery-img" src="./images/thumb/thumb_6.jpg" alt="Image of Orks">
+                            </a>
+                            <div>
+                                <h3><em>Click to Enlarge</em></h3>
+                                <p>Orks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END PHOTO-CONTAINER 6-->
+
+                    <!--PHOTO-CONTAINER 7-->
+                    <div>
+                        <div>
+                            <a href="./images/thumb/thumb_7.jpg" target="_blank">
+                            <img class="gallery-img" src="./images/thumb/thumb_7.jpg" alt="Image of Space Marines">
+                            </a>
+                            <div>
+                                <h3><em>Click to Enlarge</em></h3>
+                                <p>Space Marines</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END PHOTO-CONTAINER 7-->
+
+                    <!--PHOTO-CONTAINER 8-->
+                    <div>
+                        <div>
+                            <a href="./images/thumb/thumb_8.jpg" target="_blank">
+                            <img class="gallery-img" src="./images/thumb/thumb_8.jpg" alt="Image of T'au Empire">
+                            </a>
+                            <div>
+                                <h3><em>Click to Enlarge</em></h3>
+                                <p>T'au Empire</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END PHOTO-CONTAINER 8-->
+
+                    <!--PHOTO-CONTAINER 9-->
+                    <div>
+                        <div>
+                            <a href="./images/thumb/thumb_9.jpg" target="_blank">
+                            <img class="gallery-img" src="./images/thumb/thumb_9.jpg" alt="Image of Tyranids">
+                            </a>
+                            <div>
+                                <h3><em>Click to Enlarge</em></h3>
+                                <p>Tyranids</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END PHOTO-CONTAINER 9-->
+
+                </div>
+            </div>
+        </section>
+        <!-- END GALLERY-->
+
+        <!-- RSVP -->
+         <section>
+            <div id="contact" class="contact-container">
+                <div>
+                    <h1>Find your Warhammer Friend</h1>
+                    <div>
+                        <h2><span>Your Adventure is just around the corner.</span>
+                            <br />Reserve your friendly game today!
+                        </h2>
+                        <p>
+                            Please provide us with your basic contact information
+                        </p>
+                        <div>
+                            <form action="" method="post">
+                                <input class="rsvp" type="text" value="First Name">
+                                <input class="rsvp" type="text" value="Last Name">
+                                <input class="rsvp" type="text" value="Email Adress">
+                                <input class="rsvp" type="text" value="Phone Number">
+                                <div class="form-spacer">
+                                    <label class="terms">Terms and Conditions</label>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- END RSVP -->
+
+         <!-- FOOTER -->
+          <div>
+            www.warhammer40kfanclub.40k 2026
+          </div>
+          <!-- END FOOTER -->
+    </body>
+
+</html>
