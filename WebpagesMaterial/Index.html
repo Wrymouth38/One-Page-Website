@@ -1,98 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Basic HTML</title>
         <meta charset="utf-8">
         <title>Warhammer 40k fun club</title>
-        <style>
-
-    body {
-    margin: 0; /* removes default spacing */
-    font-family: Arial, sans-serif;
-    color: white;
-    background-image: url('./images/MAINHOMEPAGE.png'); /* your image path */
-    background-size: cover;       /* makes it fill the whole screen */
-    background-position: center;  /* keeps it centered */
-    background-repeat: no-repeat; /* no tiling */
-    background-attachment: fixed; /* optional: creates a cool parallax effect */
-    position: relative;
-    z-index: 0;
-        }
-
-        .nav a {
-    text-decoration: none; /* removes underline */
-    color: white;          /* or any color you want */
-    font-size: 20px;       /* makes it bigger */
-    font-weight: bold;
-        }
-        
-        .nav a:hover {
-    color: gold; /* Warhammer vibe 👀 */
-        }
-
-        body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0, 0, 0, 0.2); /* dark overlay */
-    z-index: -1;
-        }
-
-    .gallery-img {
-        width: 350px;
-        height: 350px;
-        object-fit: cover;
-        }
-
-        /* Grid part of the gallery */
-
-        .gallery-grid {
-            display:grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            justify-items: center;
-        }
-
-        /*Nav element*/
-        .nav {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            list-style: none;
-            padding: 20px 0;
-        }
-
-        .contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh; /* pushes it toward center vertically */
-        }
-        .video-wrapper {
-        position: relative;
-        width: 90%;           /* bigger width */
-        max-width: 900px;     /* controls max size */
-        margin: 40px auto;    /* THIS centers it */
-        padding-bottom: 56.25%; /* 16:9 ratio */
-        height: 0;
-        }
-        #home {
-        text-align: center;
-        padding-top: 100px;
-        }   
-        .video-wrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        }
-
-        </style>
+        <link rel="stylesheet" href="Warhammer_Web.css"">
     </head>
     <body>
         <!--NAV-->
