@@ -60,7 +60,7 @@ h4 {
     line-height: 40px;
     padding-bottom: 0px;
     font-size: 22px;
-    fpmt-weight: 900;
+    font-weight: 900;
 }
 
 p {
@@ -74,7 +74,7 @@ p {
 }
 
 .heading-padding {
-    paddint-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 section {
