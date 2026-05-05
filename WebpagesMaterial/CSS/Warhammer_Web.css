@@ -258,7 +258,7 @@ Container Styles
     font-family: "Raleway", sans-serif;
 }
 
-.reservation input [type="text"] {
+.reservation input[type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
